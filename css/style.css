@@ -1,0 +1,318 @@
+* {margin: 0; padding: 0; box-sizing: border-box; -webkit-box-sizing: border-box;}
+body {font-size: 62.5%; font-family: 'Gothic A1', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; background-color: #f5e4d0;}
+body.overflow {overflow: hidden;}
+.clear {line-height: 0; clear: both;}
+img {max-width: 100%;}
+p {margin: 0; padding: 0;}
+a {text-decoration: none;}
+a, div {-webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-tap-highlight-color: transparent;}
+ul {list-style: none; margin: 0; padding: 0;}
+h1,h2,h3,h4,h5 {font-weight: normal; margin:0; padding: 0;}
+
+
+
+a.logo {position: absolute; top: 22px; left: 22px; z-index: 10;}
+
+.topSection {float: left; width: 100%; position: relative; height: 100vh;}
+.topSection .banner {float: left; width: 45%; height: 100%;}
+.bannerSlider {height: 100%; width: 100%; float: left;}
+.bannerSlider .bannerImg {float: left; width: 100%; height: 100%; position: relative; background-repeat: no-repeat; background-position: center top; background-size: cover;}
+.bannerSlider .bannerImg1 {background-image: url(../images/bannerImg1.jpg);}
+.bannerSlider .bannerImg2 {background-image: url(../images/bannerImg2.jpg);}
+.bannerSlider .bannerImg3 {background-image: url(../images/bannerImg3.jpg);}
+
+/* .bannerSlider .swiper-slide::before {content: ""; position: absolute; top: 0; left: 100%; width: 100%; height: 100%; background-color: #a57b60; transition: all 2s ease-in-out;}
+.bannerSlider .swiper-slide-active::before, .bannerSlider .swiper-slide-duplicate-active::before {animation:sliderActive 1s 1 4s;}
+.bannerSlider .swiper-slide-next::before, .bannerSlider .swiper-slide-duplicate-next::before {animation:sliderActive 1s 1 5s;}
+
+@keyframes sliderActive {0% {left:0%;}  100% {left:-100%;}} */
+
+
+
+
+.topSection .content {float: left; width: 55%; height: 100%;}
+.topSection .content .box {display: table; width: 100%; height: 100%;}
+.topSection .content .box .data {display: table-cell; width: 100%; height: 100%; vertical-align: middle; text-align: center;}
+.topSection .content .box .data .parisianLogo {display: inline-block; width: 211px; height: 211px; border: 7px solid #fff; border-radius: 100%; position: relative; z-index: 2; transition: all 1s ease-in-out; -webkit-transition: all 1s ease-in-out; -moz-transition: all 1s ease-in-out; -o-transition: all 1s ease-in-out;}
+.topSection .content .box .data .parisianLogo img {width: 100%;}
+.topSection .content .box .data .bg1 {background-color: #a57b60;}
+.topSection .content .box .data .bg2 {background-color: #67222e;}
+.topSection .content .box .data .bg3 {background-color: #674624;}
+
+.topSection .content .box .data .winTrip {display: inline-block; width: 500px; background-color: #fff; border-radius: 10px; border: 2px solid #ffe388; box-shadow: 0px 5px 16px 0px rgba(16, 16, 16, 0.25); margin-top: -40px; position: relative; padding: 48px 10px 30px 10px; position: relative; overflow: hidden;} 
+.topSection .content .box .data .winTrip::before {content: ""; position: absolute; left: -15px; bottom: -10px; background: url(../images/parisEiffelTower.png) no-repeat left bottom; width: 93px; height: 100%;}
+.topSection .content .box .data .winTrip h2 {color: #3a393a; font-weight: 800; font-size: 3.8em; line-height: 1em;}
+.topSection .content .box .data .winTrip h2 span {font-size: .65em; font-weight: 600;}
+.topSection .content .box .data .winTrip p {font-size: 1.8em; color: #3a383a; font-weight: 700; margin-top: 8px;}
+.topSection .content .box .data .winTrip p sup {font-size: .8em;}
+.topSection .content .box .data .date {margin:30px 0;}
+.topSection .content .box .data .date .dateText {color: #3a383a; font-weight: 700; font-size: 2.2em;}
+.topSection .content .box .data .date .dateText sup {font-weight: 400; font-size: .7em;}
+.topSection .content .box .data .date .note {font-size: 1.5em; color: #673e34; font-weight: 300; margin-top: 10px;}
+
+.bookAppointment {margin:30px 0; position: relative;}
+.bookAppointment h3 {font-size: 1.7em; color: #3a383a; font-weight: 700; margin-bottom: 10px;}
+.bookAppointment .salonBox {width: 430px; background-color: #3a383a; display: inline-block; border-radius: 30px; height: 53px; position: relative;}
+.bookAppointment .salonBox .autoDetect {float: left; background: url(../images/autoDetectIcon.svg) no-repeat center; width: 60px; height: 100%; background-size: 25px; cursor: pointer;}
+.bookAppointment .salonBox .inputBox {float: left; width: calc(100% - 120px); height: 100%; border: 0; background: transparent; font-family: 'Gothic A1', sans-serif; font-size: 1.7em; color: #fff; font-weight: 500;}
+.bookAppointment .salonBox .inputBox:focus {outline: none;}
+.bookAppointment .salonBox .inputBox::-webkit-input-placeholder {color: #fff;}
+.bookAppointment .salonBox .inputBox::-moz-placeholder {color: #fff;}
+.bookAppointment .salonBox .inputBox:-ms-input-placeholder {color: #fff;}
+.bookAppointment .salonBox .inputBox:-moz-placeholder {color: #fff;}
+.bookAppointment .salonBox .search {float: left; background: url(../images/searchIcon.svg) no-repeat center; width: 60px; height: 100%; background-size: 25px; cursor: pointer;}
+.dummyClick::before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 30px; z-index: 1; cursor: pointer;}
+
+h2.title {font-size: 3em; color: #3a383a; font-weight: 800; margin-bottom: 70px; text-align: center;}
+
+.exploreOffers {float: left; width: 100%; position: relative; padding: 100px 2% 70px 2%;}
+.exploreOffers::before {content: ""; position: absolute; top: -40px; right: 0; background: url(../images/arcDeTriomphe.png) no-repeat 0 0; width: 300px; height: 333px; z-index: -1;} 
+.exploreOffers::after {content: ""; position: absolute; bottom: -100px; left: -5%; background: url(../images/louvre.png) no-repeat 0 0; width: 383px; height: 218px;} 
+.exploreOffers .exploreSliderBox {float: left; width: 100%;}
+.exploreOffers .exploreSliderBox .exploreSlider {padding-bottom: 80px; padding-top: 20px;}
+.exploreOffers .exploreSliderBox .swiper-slide img {float: left; width: 100%; box-shadow: 0px 0px 9px 0px rgba(16, 16, 16, 0.3);}
+.exploreOffers .exploreSliderBox .swiper-slide {transform: scale(.8); -webkit-transform: scale(.8); -moz-transform: scale(.8); -o-transform: scale(.8);}
+.exploreOffers .exploreSliderBox .swiper-slide-active {transform: scale(1); -webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); z-index: 2;}
+.exploreOffers .exploreSliderBox .swiper-slide-prev {transform-origin: right center;}
+.exploreOffers .exploreSliderBox .swiper-slide-next {transform-origin: left center;}
+.exploreOffers .exploreSliderBox .swiper-button-next, .exploreOffers .exploreSliderBox .swiper-button-prev {background-color: rgba(58, 56, 58, 0.75); width: 44px; height: 44px; border-radius: 100%; color: #fff; margin-top: -5%;}
+.exploreOffers .exploreSliderBox .swiper-button-next:focus, .exploreOffers .exploreSliderBox .swiper-button-prev:focus {outline: none;}
+.exploreOffers .exploreSliderBox .swiper-button-next:after, .exploreOffers .exploreSliderBox .swiper-button-prev:after {font-size: 2.4em;}
+.exploreOffers .exploreSliderBox .swiper-button-prev {left: 10%;}
+.exploreOffers .exploreSliderBox .swiper-button-next {right: 10%;}
+.exploreOffers .exploreSliderBox .swiper-slide, .exploreOffers .exploreSliderBox .swiper-slide img {transition: all 1s ease-in-out;}
+.exploreOffers .exploreSliderBox .swiper-pagination-bullet {width: 13px; height: 13px; opacity: .2; margin:0 10px;}
+.exploreOffers .exploreSliderBox .swiper-pagination-bullet-active {background-color: #313131; opacity: 1;}
+
+.videoSection {float: left; width: 100%; position: relative; padding: 0 15% 0 15%; margin-bottom: 110px;}
+.videoSection .videoBox, .videoSection .video {float: left; width: 100%;}
+.videoSection .video {height: 700px;}
+
+footer {float: left; width: 100%; background-color: #fbf4ec; padding: 15px 0; text-align: center; font-size: 1.5em; color: #3a383a; font-weight: 500;}
+footer a {color: #3a383a; margin: 0 9px;}
+footer a:hover {border-bottom: 1px solid #3a383a;}
+
+
+/* search section */
+
+#searchOverlay {position: fixed; top: 0; left: 0; z-index: 9; background-color: #fff; width: 100%; height: 100%; opacity: 0; visibility: hidden; transform: scale(.6) translateY(60%); -webkit-transform: scale(.6) translateY(60%); -moz-transform: scale(.6) translateY(60%); -o-transform:scale(.6) translateY(60%);}
+#searchOverlay.open {opacity: 1; visibility: visible; transform: scale(1) translateY(0); -webkit-transform: scale(1) translateY(0); -moz-transform: scale(1) translateY(0); -o-transform: scale(1) translateY(0); transition: all .5s cubic-bezier(0.82, 0.24, 0.34, 1.18);}
+#searchOverlay .leftSection, #searchOverlay .rightSection {height: 100%;}
+#searchOverlay .leftSection {float: left; width: 35%; padding: 20px 0%; position: relative; background-color: #f5e4d0;}
+#searchOverlay .leftSection::before {content: ""; position: absolute; bottom: 0; left: -5%; background: url(../images/parisEiffelTower2.png) no-repeat 0 0; width: 147px; height: 290px; z-index: 0;}
+#searchOverlay .leftSection a.back {position: relative; float: right; font-size: 1.2em; text-transform: uppercase; color: #1C1C1C; letter-spacing: 1px; margin-right: 5%; z-index: 2;}
+#searchOverlay .leftSection a.back::before {content:''; height:8px; width:8px; display:block; border:1px solid #1C1C1C; border-right-width:0; border-bottom-width:0; transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg); position:absolute; top:4px; left:-12px;}
+#searchOverlay .leftSection .searchSection {float: left; width: 100%; position: relative; padding-top: 30px;}
+.searchBar {width: 80%; float: left; position: relative; z-index: 5; margin: 0 10%;}
+.searchBar .searchBarClick {width: 90%; height: 55px;}
+.searchBar .autoSearchResult {float: left; width: 90%; position: absolute; top: 105%; left: 5%; background-color: #fff; padding:2% 5%; -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,.3); box-shadow: 0 3px 6px 0 rgba(0,0,0,.3); border-radius: 10px; display: none}
+.searchBar .autoSearchResult ul li {float: left; width: 100%; font-size: 1.8em; font-weight: 300; color: #000000; text-transform: uppercase; padding: 10px 0; cursor: pointer;}
+.searchBar .autoSearchResult ul li:hover {font-weight: bold;}
+#searchOverlay .searchBarClick .inputBox {font-size: 3em;}
+
+.searchResult {float: left; width: 100%; margin: 30px 0 0 0;}
+.searchCount {float: left; width: 100%; margin: 0 0 10px 0; color: #000000; font-size: 1.4em; font-weight: bold; text-transform: uppercase;  padding: 0 15%;}
+.searchCount span {font-weight: 400;}
+.searchCount.red {color: red;}
+
+.searchResult .data {float: left; width: 100%; height: calc(100vh - 250px);}
+.searchResult .data ul li {float: left; width: 100%; padding: 40px 15%;}
+.searchResult .data ul li:nth-child(even) {background-color: #d9c7b1;}
+.searchResult .data ul li h2 {float: left; width: 100%; margin: 0 0 10px 0; padding: 0; color: #000000; font-weight: bold; font-size: 1.6em; text-transform: uppercase;}
+.searchResult .data ul li p {float: left; width: 100%; margin: 0; padding: 0; font-size: 1.4em; color: #000000; font-weight: 600; line-height: 1.6em; text-transform: capitalize;}
+.searchResult .data ul li .buttons {float: left; width: 100%; margin: 20px 0 0 0;}
+.searchResult .data ul li .buttons a {float: left; position: relative; padding: 8px 15px 7px 35px; font-size: 1.3em; color: #fff; background-color: #352e25; margin-right: 8px; border-radius: 10px; font-weight: 700; }
+.searchResult .data ul li .buttons a.call:before {content: ""; position: absolute; top: 0; left: -6px; background: url(../images/callIcon.svg) no-repeat center; width: 50px; height: 100%;}
+.searchResult .data ul li .buttons a.location:before {content: ""; position: absolute; top: 0; left: -6px; background: url(../images/locationIcon.svg) no-repeat center; width: 50px; height: 100%;}
+.searchResult .data ul li .buttons a.sendToPhone:before {content: ""; position: absolute; top: 0; left: -6px; background: url(../images/sendToPhone.svg) no-repeat center; width: 50px; height: 100%; background-size: 18px;}
+
+
+
+.searchResult .data .mCSB_scrollTools .mCSB_draggerRail {width: 4px; background-color:#EAEAEA; filter: opacity(1);}
+.searchResult .data .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {background-color: #D0D0D0; filter: opacity(1);}
+.searchResult .mCSB_inside > .mCSB_container {margin-right: 10px}
+#searchOverlay .rightSection {float: left; width: 65%; position: relative;}
+#searchOverlay .rightSection .googlemap {float: left; width: 100%; height: 100%;}
+/* #searchOverlay .rightSection .infoWindow {position: absolute; top: 0; left: 0; background-color: #fff; width: 290px; border-radius: 10px; -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,.3); box-shadow: 0 3px 6px 0 rgba(0,0,0,.3); padding: 20px; display: none} */
+#searchOverlay .rightSection .infoWindow {width: 290px;}
+#searchOverlay .rightSection .infoWindow h2 {float: left; width: 100%; margin: 0 0 6px 0; padding: 0; color: #000000; font-weight: bold; font-size: 1.4em; text-transform: uppercase;}
+#searchOverlay .rightSection .infoWindow p {float: left; width: 100%; margin: 0; padding: 0; font-size: 1.1em; color: #000000;  line-height: 1.4em; font-weight: normal; text-transform: capitalize;}
+
+#searchOverlay .rightSection .infoWindow a.close, #call .content a.close, #sms .content a.close {width: 30px; height:30px; position: absolute; top: 3px; right: 0;}
+#searchOverlay .rightSection .infoWindow a.close:before, #searchOverlay .rightSection .infoWindow a.close:after, #call .content a.close:before, 
+#call .content a.close:after, #sms .content a.close::before, #sms .content a.close::after {content:''; height:2px; width:20px; display:block; background:#333; border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px; position:absolute; top:16px; left:0px; transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);}
+#searchOverlay .rightSection .infoWindow a.close:after, #call .content a.close:after, #sms .content a.close::after {transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);}
+
+#call {position: fixed; top: 0; left: 0; background-color: rgba(0,0,0,.7); z-index: 20; height: 100vh; width: 100vw; display: none;}
+#call .content {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); background-color: #fff; width: 300px; padding: 20px; border-radius: 10px;}
+#call .content h2 {float: left; width: 100%; margin: 0 0 10px 0; padding: 0; color: #000000; font-weight: bold; font-size: 1.6em; text-transform: uppercase;}
+#call .content ul li {float: left; width: 100%; padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,.1)}
+#call .content ul li a {font-size: 1.4em; color: #000000; font-weight: 600;}
+
+#sms {position: fixed; top: 0; left: 0; background-color: rgba(0,0,0,.7); z-index: 20; width: 100%; height: 100%; display: none;}
+#sms .content {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); background-color: #fff; width: 300px; padding: 20px; border-radius: 10px;}
+#sms .content h2 {float: left; width: 100%; margin: 0 0 10px 0; padding: 0; color: #000000; font-weight: bold; font-size: 1.6em; text-transform: uppercase;}
+#sms .content .smsInput {float: left; width: 100%; border: 1px solid #ccc; padding: 10px; border-radius: 2px; margin-bottom: 15px;}
+#sms .content .smsInput:focus {outline: none;}
+#sms .content .send {float: left;  position: relative; border: 0; padding: 8px 15px; font-size: 1.3em; color: #fff;background-color: #352e25; border-radius: 10px; font-weight: 700; cursor: pointer;}
+
+#sms .content p.thankYou {margin: 15px 0 0 0; font-size: 1.4em; float: left; width: 100%; font-weight: 800; color: red; display: none;}
+
+.mobileTab {float: left; width: 100%; padding: 0 10%; margin-top: 10px; display: none;}
+.mobileTab ul li {float: left; width: 50%; height: 50px; border: 1px solid #F2F2F2; border-radius: 10px 10px 0 0; text-align: center; line-height: 50px; cursor: pointer; background-color: #F2F2F2}
+.mobileTab ul li span {font-size: 1.6em; font-weight: 600; padding-left: 35px; position: relative;}
+.mobileTab ul li span:before {content:""; position: absolute; left: 0;}
+.mobileTab ul li.listView span:before {top:2px; background: url(../images/listIcon.png) no-repeat 0 0; width: 26px; height: 20px; background-size: 26px;}
+.mobileTab ul li.mapView span:before {top:-2px; background: url(../images/mapIcon.png) no-repeat 0 0; width: 18px; height: 24px; background-size: 18px; left: 10px;}
+
+.gm-ui-hover-effect img{display: none !important;}
+.gm-ui-hover-effect {width: 30px !important; height:30px !important;}
+.gm-ui-hover-effect:before, .gm-ui-hover-effect:after {content:''; height:2px; width:20px; display:block; background:#333; border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px; position:absolute; top:20px; left:0px; transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);}
+.gm-ui-hover-effect:after {transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);}
+
+.mobileTab ul li.active {background-color: #d0c1b0}
+
+
+
+
+@media only screen and (max-width:1700px) {
+    .searchCount {padding: 0 10%;}
+    .searchResult .data ul li {padding: 30px 2% 30px 10%}
+    .searchResult .data ul li .buttons a {margin-bottom: 5px;}
+}
+  
+@media only screen and (max-width:1500px) {
+    .topSection .content .box .data .parisianLogo {width: 170px; height: 170px;}
+    .topSection .content .box .data .winTrip h2 {font-size: 3.3em;}
+    .topSection .content .box .data .winTrip h2 span {font-size: .6em;}
+    .topSection .content .box .data .winTrip p {font-size: 1.6em;}
+    .topSection .content .box .data .date .dateText {font-size: 2em;}
+    .topSection .content .box .data .date .note {font-size: 1.4em;}
+    
+
+    h2.title {font-size: 2.5em; margin-bottom: 40px;}
+    .exploreOffers {padding: 100px 5% 70px 5%;}
+    .videoSection .video {height: 450px;}
+
+    #searchOverlay .searchBarClick .inputBox {font-size: 2.5em;}
+    #searchOverlay .searchBarClick .autoDetect {background-size: 30px;}
+    #searchOverlay .searchBarClick .searchIcon {background-size: 28px;}
+    #searchOverlay .leftSection {width: 40%;}
+    #searchOverlay .rightSection {width: 60%;}
+
+    #searchOverlay .bookAppointment .salonBox {width: 380px;}
+}
+  
+@media only screen and (max-width:1100px) {     
+    a.logo {z-index: 8;} 
+    .topSection .content .box .data .winTrip {width: 450px;}
+
+    #searchOverlay {transform: scale(.6) translateY(130%); -webkit-transform: scale(.6) translateY(130%); -moz-transform: scale(.6) translateY(130%); -o-transform: scale(.6) translateY(130%)}  
+    #searchOverlay .leftSection a.back {position: absolute; right: 0%; top: 25px;}  
+    #searchOverlay .leftSection, #searchOverlay .rightSection {width: 100%; padding: 0}
+    .searchResult .data, #searchOverlay .rightSection {position: absolute; left: 0; width: 100%; opacity: 0; visibility: hidden;}
+    .searchResult .data {top:280px; height: calc(100vh - 280px);}
+    #searchOverlay .rightSection {top:264px; height: calc(100vh - 264px);}
+    .searchResult .data.active, #searchOverlay .rightSection.active {opacity: 1; visibility: visible;}
+    .mobileTab {display: block} 
+    #searchOverlay .bookAppointment .salonBox {width: 100%;}
+    
+}
+ 
+@media only screen and (max-width:800px) {
+    .topSection .banner {width: 100%; height: 70%;}
+    .topSection .content {height: auto; width: 100%; position: relative; top: -250px; z-index: 1;}
+    .topSection .bookAppointment {position: fixed; bottom: 0; left: 0; width: 100%; background-color: #f5e4d0; margin: 0; padding: 10px 0; z-index: 9;}
+    .exploreOffers {z-index: 0; padding: 0 0 50px 0;}
+    .exploreOffers::before {background-size: 200px; background-position: right top;}
+    .exploreOffers::after {background-size: 250px; background-position: left top;}
+    footer {margin-bottom: 130px;}
+    .videoSection {padding: 0; margin-bottom: 50px;}    
+}
+
+  
+@media only screen and (max-width:500px) {
+    a.logo {width: 90px; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -o-transform: translateX(-50%); top: 10px;}
+    .topSection .banner {height: 62%;}
+    .topSection .content {top: -200px;}
+    .topSection .content .box .data .winTrip {width: 90%; margin-top: -20px; padding: 35px 10px 10px 10px;}
+    .topSection .content .box .data .winTrip::before {background-size: 65px;}
+    .topSection .content .box .data .parisianLogo {width: 130px; height: 130px; border: 5px solid #fff;}
+    .topSection .content .box .data .winTrip h2 {font-size: 2.8em;}
+    .topSection .content .box .data .winTrip p, .bookAppointment h3 {font-size: 1.4em;}
+    .topSection .content .box .data .date {margin: 20px 0;}
+    .topSection .content .box .data .date .dateText {font-size: 1.8em;}
+    .topSection .content .box .data .date .note {font-size: 1.3em;}
+    .bookAppointment .salonBox {width: 90%; height: 45px;}
+    .bookAppointment .salonBox .inputBox {font-size: 1.5em; width: calc(100% - 100px);}
+    .bookAppointment .salonBox .autoDetect, .bookAppointment .salonBox .search {background-size: 22px; width: 50px;}
+    
+    h2.title {font-size: 2em; margin-bottom: 25px}
+
+    .exploreOffers::before {background-size:130px; top: -90px;}
+    .exploreOffers::after {background-size:180px;}    
+    .exploreOffers .exploreSliderBox .swiper-button-next, .exploreOffers .exploreSliderBox .swiper-button-prev {display: none;}
+    .exploreOffers .exploreSliderBox .swiper-pagination-bullet {width: 10px; height: 10px; margin: 0 7px;}
+    .exploreOffers .exploreSliderBox .exploreSlider {padding-bottom: 60px;}
+    .videoSection .video {height: 370px;}
+    footer {font-size: 1.3em;}
+
+
+    #searchOverlay .searchBarClick .inputBox {font-size: 2em;}
+    #searchOverlay .searchBarClick .autoDetect {background-size: 26px;}
+    #searchOverlay .searchBarClick .searchIcon {background-size: 24px;}    
+    .mobileTab ul li {height: 40px; line-height: 40px}
+    .mobileTab ul li span {font-size: 1.4em;}
+    .mobileTab ul li.listView span:before {top:4px; left: 7px; width: 20px; height: 16px; background-size: 20px;}
+    .mobileTab ul li.mapView span:before {top:0px; width: 15px; height: 20px; background-size: 15px; left: 12px;}      
+    .searchResult {margin: 15px 0 0 0;}  
+    .searchResult .data {top:230px; height: calc(100vh - 240px);}
+    #searchOverlay .rightSection {top:231px; height: calc(100vh - 231px);}  
+    .searchBar .autoSearchResult ul li {font-size: 1.4em; padding: 7px 0;}  
+    #searchOverlay .rightSection .infoWindow {width: 100%;}  
+    #searchOverlay .leftSection::before {display: none;}
+    .searchResult .data ul li h2 {font-size: 1.4em;}
+    .searchResult .data ul li p {font-size: 1.3em;}
+    .searchResult .data ul li .buttons {margin-top: 10px;}
+    .searchResult .data ul li {padding: 20px 2% 20px 5%;}
+}
+  
+@media only screen and (max-width:400px) {
+    a.logo {width: 70px;}
+    .topSection .content .box .data .winTrip h2 {font-size: 2.5em;}
+    .topSection .content .box .data .winTrip p, .bookAppointment h3 {font-size: 1.3em;}
+    .exploreOffers::before {background-size:100px}
+    .exploreOffers::after {background-size:150px;}
+
+    h2.title {font-size: 1.8em; margin-bottom: 15px}
+
+    .videoSection .video {height: 300px;}
+
+    .searchCount, .mobileTab {padding: 0 5%;}
+    .searchBar {margin: 0 5%;}
+}
+  
+@media only screen and (max-width:340px) {  
+    
+    .topSection .content {top: -150px;}
+    .topSection .content .box .data .parisianLogo {width: 100px; height: 100px;}
+    .topSection .content .box .data .winTrip h2 {font-size: 2em;}
+    .topSection .content .box .data .winTrip p, .bookAppointment h3 {font-size: 1.2em;}
+    .topSection .content .box .data .date .dateText {font-size: 1.6em;}
+    .bookAppointment .salonBox {height: 40px;}
+    .bookAppointment .salonBox .inputBox {font-size: 1.3em; width: calc(100% - 80px);}
+    .bookAppointment .salonBox .autoDetect, .bookAppointment .salonBox .search {background-size: 18px; width: 40px;}
+    .videoSection .video {height: 250px;}
+
+
+    h2.title {font-size: 1.6em; margin-bottom: 10px}
+
+    footer {margin-bottom: 100px;}
+
+    #searchOverlay .leftSection::before {background-size: 100px;}
+    #searchOverlay .leftSection::after {background-size: 50px;}    
+
+    .searchResult .data {top:240px; height: calc(100vh - 240px);}
+    #searchOverlay .rightSection {top:240px; height: calc(100vh - 240px);}  
+}
+  
